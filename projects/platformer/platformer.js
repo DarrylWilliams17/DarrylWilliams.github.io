@@ -16,7 +16,7 @@ $(function () {
       setInterval(main, 1000 / frameRate);
     }
     //create walls
-    createPlatform(-50, 50, canvas.width + 200,50); //top
+    createPlatform(-50, 50, canvas.width + 2600,50); //top
     createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
     createPlatform(-50, -50, 50, canvas.height + 500); //bottom
     createPlatform(canvas.width, -50, 50, canvas.height + 100);
@@ -46,6 +46,7 @@ $(function () {
     createPlatform(530, 400, 520, 50); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(80, 400, 400,50); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
     createPlatform(100, 400, 400,50);2 // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(590, 250, 450,50);2 // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
 
     
     // TODO 2
