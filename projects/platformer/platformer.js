@@ -17,8 +17,8 @@ $(function () {
     }
     //create walls
     createPlatform(-50, 50, canvas.width + 2600,50); //top
-    createPlatform(-50, canvas.height - 10, canvas.width + 100, 200); //right
-    createPlatform(-50, -50, 50, canvas.height + 500); //bottom
+    createPlatform(-100, canvas.height - 10, canvas.width + 100, 200); //right
+    createPlatform(-100, -50, 50, canvas.height + 500); //bottom
     createPlatform(canvas.width, -50, 50, canvas.height + 100);
 
     /**
@@ -43,10 +43,10 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-    createPlatform(530, 400, 520, 50); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    createPlatform(80, 400, 400,50); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    createPlatform(100, 400, 400,50);2 // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
-    createPlatform(590, 250, 450,50);2 // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(500, 400, 530, 30); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(70, 600, 430,40); // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(120, 420, 460,30);2 // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
+    createPlatform(590, 250, 450,40);2 // short but wide platform located 500 pixels from the left of the screen and 300 pixels from the top of the screen
 
     
     // TODO 2
@@ -54,10 +54,10 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-    createCollectable("steve", 500, 200, 20, 0.10); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
+    createCollectable("steve", 600, 200, 20, 0.10); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
     createCollectable("grace", 500, 600); // creates a "grace" collectible at the coordinates (500, 300), falling with default gravity and bouncing with default bounce %
     "database" 
-    createCollectable("kennedi", 100, 300, 20, 0.10); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
+    createCollectable("kennedi", 300, 300, 20, 0.20); // creates a "steve" collectible at the coordinates (500, 300), falling with a high gravity of 20, and bouncing with 50% bounce
 "max" 
 "steve" 
 "grace" 
