@@ -8,7 +8,7 @@
 		.box {
 			width: 200px;
 			height: 70px;
-			background-color: rgb(249, 0, 0);
+			background-color: rgb(4, 0, 249);
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -63,6 +63,7 @@
 			
 			// TODO 2 - Variable declarations 
 			
+			var myVariable = someValue;
 
 			
 			/* 
@@ -71,21 +72,44 @@
 			turn it around! 
 			*/
 			function update() {
-				moveBoxTo(10);
+				moveBoxTo(positionX);
 				moveBoxTo(20);
 				moveBoxTo(30);
-                	
+				myVariable = myVariable + 10;
 
+ 
 			};
+// When you first create the Variable...
+var positionX = 0;
 
+// during update... 
+// Frame 1
+positionX = 0 + 10;         // positionX = 10
+moveBoxTo(positionX);
+
+// Frame 2
+positionX = 10 + 10;         // positionX = 20
+moveBoxTo(positionX);
+
+// Frame 3
+positionX = 20 + 10;         // positionX = 30
+moveBoxTo(positionX);
+
+// Frame 4
+positionX = 30 + 10;         // positionX = 40
+moveBoxTo(positionX);
+
+// so on...
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
 			it should increase the points total, increase the speed, and move the box to
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
-
+				function handleBoxClick() {
+   positionX = 0;
+}	
+           
 
 			};
 		})();
