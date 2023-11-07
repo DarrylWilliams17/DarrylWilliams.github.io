@@ -63,7 +63,13 @@
 			
 			// TODO 2 - Variable declarations 
 			
-			var myVariable = someValue;
+			var positionX=0
+			var points=0+10
+            var speed=10+10
+
+            var positionY=20+10
+            var speedY=30+10
+			
 
 			
 			/* 
@@ -72,43 +78,11 @@
 			turn it around! 
 			*/
 			function update() {
-				moveBoxTo(positionX);
-				moveBoxTo(20);
-				moveBoxTo(30);
-				myVariable = myVariable + 10;
-// TODO 2
-var position;
-var points;
-var speed;
+				// When you first create the Variable...
+				postionX+positionX+10	
+				moveBoxTo(postionX)
 
-var positionY;
-var speedY;
 
-position = 0;
-points = 0;
-speed = 100;
-box.css(left , position);
- 
-			};
-// When you first create the Variable...
-var positionX = 0;
-
-// during update... 
-// Frame 1
-positionX = 0 + 10;         // positionX = 10
-moveBoxTo(positionX);
-
-// Frame 2
-positionX = 10 + 10;         // positionX = 20
-moveBoxTo(positionX);
-
-// Frame 3
-positionX = 20 + 10;         // positionX = 30
-moveBoxTo(positionX);
-
-// Frame 4
-positionX = 30 + 10;         // positionX = 40
-moveBoxTo(positionX);
 
 // so on...
 			/* 
@@ -124,7 +98,8 @@ moveBoxTo(positionX);
            
 
 			};
-		})();
+		};
 	</script>
+
 </body>
 </html>
